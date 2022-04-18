@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of two numbers</title>
+    <script>
+        function sum(){
+            let x = document.getElementById("num1").value;
+            let y = document.getElementById("num2").value;
+            let z = parseInt(x) + parseInt(y);
+            document.write(z);
+       }
+       function sub(){
+            let x = document.getElementById("num1").value;
+            let y = document.getElementById("num2").value;
+            let z = parseInt(x) - parseInt(y);
+            document.write(z);
+       }
+       function mul(){
+            let x = document.getElementById("num1").value;
+            let y = document.getElementById("num2").value;
+            let z = parseInt(x) * parseInt(y);
+            document.write(z);
+       }
+       function div(){
+            let x = document.getElementById("num1").value;
+            let y = document.getElementById("num2").value;
+            let z = parseInt(x) / parseInt(y);
+            document.write(z);
+       }
+       function mod(){
+            let x = document.getElementById("num1").value;
+            let y = document.getElementById("num2").value;
+            let z = parseInt(x) % parseInt(y);
+            document.write(z);
+       }
+    </script>
+</head>
+<body>
+    <h2>Enter first element</h2>
+    <input type="text" id="num1">
+    <br>
+    <h2>Enter second element</h2>
+    <input type="text" id="num2">
+    <br>
+    <br>
+    <button onclick="sum()">Add</button>
+    <br>
+    <br>
+    <button onclick="sub()">Subract</button>
+    <br>
+    <br>
+    <button onclick="mul()">Multiply</button>
+    <br>
+    <br>
+    <button onclick="div()">Divide</button>
+    <br>
+    <br>
+    <button onclick="mod()">Modulas</button>
+    <br>
+</body>
+</html>
