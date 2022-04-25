@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data type</title>
+    <script>
+        function findType(){
+            let x = document.getElementById("id1").value;
+            // alert(typeof x); 
+            if( x > 0){
+                document.getElementById("result").innerHTML = `Postive`;
+            }
+            else if( x == 0){
+                document.getElementById("result").innerHTML = `Zero`;
+            }
+            else{
+                document.getElementById("result").innerHTML = `Negative`;
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter input</h2>
+    <br>
+    <input type="text" id="id1">
+    <br>
+    <br>
+    <button onclick="findType()">Submit</button>
+    <br>
+    <br>
+    <h2 id="result"></h2>
+</body>
+</html>
